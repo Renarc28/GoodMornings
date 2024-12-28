@@ -1,0 +1,885 @@
+body{
+    background: linear-gradient(to bottom, #a8e6cf, #dcedc1);
+    font-family: 'Montserrat';
+    animation: slideIn 1s ease;
+}
+html{
+  scroll-behavior: smooth;
+}
+
+#Productos{
+  scroll-margin-top: 110px;
+}
+
+#Nosotros{
+  scroll-margin-top: 110px;
+}
+
+
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+/*ANIMACIONES*/
+.respiracion img{
+  animation: respirar 4s ease-in-out infinite;
+}
+
+@keyframes respirar {
+  0%, 100% {
+    transform: scale(1.5);
+  }
+  50% {
+    transform: scale(1.6);
+  }
+}
+
+
+@keyframes Recorrido {
+  0%, 20%{
+    opacity: 0;
+    transform: scale(1.1);
+  }
+  25%, 45%{
+    opacity: 1;
+    transform: scale(1);
+  }
+  50%, 100%{
+    opacity: 0;
+    transform: scale(0.9);
+  }
+
+}
+
+@keyframes slideIn {
+  from {
+      transform: translateY(-100%);
+      opacity: 0; 
+  }
+  to {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+
+
+.whatsapp{
+  animation: animacion 4s ease-in-out infinite;
+}
+
+/*BARRA NAV */
+.navbar{
+  background:  #57bb95;
+  min-height: 50px;
+  padding: 2px 0;
+}
+
+.brand{
+    margin-left: 5%;
+    line-height: 50px;
+}
+.brand a{
+    color: white;
+    font-size: 30px;
+}
+
+.brand img{
+    max-height: 50%;
+    border-radius: 50%;
+    margin-left: 40px;
+}
+
+.container ul li a{
+  
+  font-size: 18px;
+  text-decoration: none;
+  color: #ffffff;
+  font-family: 'Montserrat';
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  display: block;
+  margin-bottom: 15px;
+  transition: all .3s ease;
+}
+
+.container ul li a:hover{
+  color: #5e5e5d98;
+  padding-left: 6px;
+}
+
+.navbar-nav ul li a:hover{
+  color: #ffffff;
+  padding-left: 6px;
+}
+
+/*CARRITO*/
+.cart-icon {
+  position: relative;
+  padding-right: 1rem;
+}
+
+.cart-count {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background-color: #65dc0a;
+  color: white;
+  border-radius: 50%;
+  padding: 0.2rem 0.5rem;
+  font-size: 0.8rem;
+}
+
+#cart-items {
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.cart-item img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.cart-item-details {
+  flex-grow: 1;
+}
+
+.cart-item-price {
+  color: #57bb95;
+  font-weight: bold;
+}
+
+.cart-item-quantity {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.cart-item-quantity button {
+  background: none;
+  border: 1px solid #57bb95;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.cart-total {
+  margin-top: 20px;
+  text-align: right;
+  padding: 10px;
+  border-top: 2px solid #57bb95;
+}
+/*MARQUEE*/
+
+.marquee{
+  font-family: 'Montserrat';
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.marquee{
+  background: #57bb95;
+}
+
+/*HEADER*/
+
+header{
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+}
+header ul{
+    display: inline;
+    list-style-type: none;
+    margin: 0.5em auto;
+    text-align: center;
+
+}
+
+header ul li{
+    display: inline;
+}
+.navbar-nav{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navbar-nav li{
+    margin-right: 10px;
+}
+
+.navbar-nav li:last-child{
+    margin-right: 0;
+}
+
+/*ACERCA DE NOSOTROS*/
+.us{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  gap: 2rem;
+}
+.About-us{
+  display: flex;
+  flex-direction: space-between;
+  padding: 2rem;
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.wrapper{
+  height: 400px;
+  width: 100%;
+  border-radius: .5rem;
+  outline: 2px solid white;
+  box-shadow: 0 4px 10px 0 #8da9c4;
+  position: relative;
+  object-fit: cover;
+}
+
+.Acerca{
+  font-family: 'Montserrat';
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  text-transform: uppercase;
+  position: relative;
+}
+.card{
+ position: absolute;
+ width: 100%;
+ height: 100%;
+ padding: 0;
+ color: white;
+ display: flex;
+ padding: 0.5rem;
+ justify-content: center;
+ align-items: center;
+ flex-direction: column;
+ opacity: 0;
+ height: 100%;
+ animation: Recorrido 16s linear infinite;
+}
+
+.card img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card:nth-child(1){
+  animation: Recorrido 8s linear infinite;
+  animation-delay: 0s;
+}
+.card:nth-child(2){
+  animation: Recorrido 8s linear infinite;
+  animation-delay: 2s;
+}
+.card:nth-child(3){
+  animation: Recorrido 8s linear infinite;
+  animation-delay: 4s;
+}
+.card:nth-child(4){
+  animation: Recorrido 8s linear infinite;
+  animation-delay: 8s
+};
+.wrapper::-webkit-scrollbar{
+  display: none;
+}
+
+/*CAROUSEL*/
+/* Estilos del Carrusel */
+.carousel-container {
+  position: absolute; 
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  width: 80%; 
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 1200px;
+  z-index: 2;
+  max-width: 1400px;
+  overflow: hidden;
+  background: transparent;
+}
+
+.carousel-slides {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease;
+  z-index: 2;
+  position: relative;
+  background: transparent;
+}
+
+.slide {
+  min-width: 100%;
+  height: 800px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+}
+
+
+.Carrusel{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 9rem;
+  background: rgba(255,255,255,0.1);
+  border-radius: 10px;
+  opacity: 0.9;
+  margin: 2rem;
+  background: transparent;
+}
+
+.carousel-button:hover{
+  color: #57bb95;
+}
+
+.Carrusel img{
+  width: 200px;
+  height: auto;
+  object-fit: contain;
+  margin-right: 1.5rem;
+}
+
+.descripcion-bebida{
+  font-family: 'Montserrat';
+  text-transform: uppercase;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  color: #0077ffa2;
+  margin-left: 3rem;
+}
+
+.content-banner {
+  margin: 0;
+  padding: 0;
+}
+
+.content-banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.7);
+  border: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 1.5rem;
+  z-index: 3;
+  transition: background-color 0.3s ease;
+}
+
+.carousel-button:hover {
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.carousel-button.prev {
+  left: 20px;
+}
+
+.carousel-button.next {
+  right: 20px;
+}
+/*MAIN*/
+main {
+  padding: 0.2rem;
+  margin-top: -10px;
+}
+.banner {
+  position: relative;
+  height: 800px;
+  overflow: hidden;
+  background: transparent; /* Eliminar el fondo verde */
+}
+
+.Imagen-Fondo{
+  width: 100%;
+}
+.banner img {
+  width: 100%;
+  max-width: 2000px;
+  max-height: 850px;
+  display: block;
+  object-fit: cover;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.content-banner img {
+  height: 300px; /* Ajusta la altura según necesites */
+  object-fit: cover;
+  width: 100%;
+  display: block;
+}
+
+.banner{
+  margin-top: 0;
+  padding-top: 0;
+  background-position: center ;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+}
+
+.banner img{
+  width: 100%;
+  background-size: cover;
+  background-image: center;
+  height: auto;
+}
+
+.content-banner {
+   margin-top: -10px;
+   position: relative;
+   overflow: hidden;
+   /*AJUSTES*/
+   margin-bottom: 0;
+   padding-bottom: 0;
+   height: auto;
+}
+
+.Main-Fondo{
+  display: block;
+  width: 100%;
+  transition: opacity 0.5s ease;
+}
+
+.Alter-Fondo{
+  display: block;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.content-banner:hover .Main-Fondo{
+  opacity: 0;
+}
+
+.content-banner:hover .Alter-Fondo{
+  opacity: 1;
+}hb
+/*MAIN PRODUCTO*/
+.stars i{
+  color: #65dc0a;
+}
+
+.card-product:hover .stars i{
+  color: #3c9441;
+}
+.stars
+.Productos{
+  font-family: 'Montserrat';
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.top-products {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.container-products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 3rem;
+  font-size: 1.4rem;
+}
+
+.card-product {
+  transition: box-shadow 0.3s ease;
+  background-color: white;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  
+}
+
+.card-product:hover {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.card-product .container-img img {
+  width: 100%;
+  height: 200px; /* ajusta el alto de las imágenes aquí */
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.container-img {
+  position: relative;
+}
+
+.container-img img {
+  width: 100%;
+}
+
+.container-img .discount {
+  position: absolute;
+  left: 0;
+  background-color: #65dc0a;
+  color: white;
+  padding: 2px 1.2rem;
+  border-radius: 1rem;
+  font-size: 1.2rem;
+}
+
+.card-product:hover .discount {
+  background-color: rgb(35, 107, 41);
+}
+
+.button-group {
+  justify-self: start;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  position: absolute;
+  top: 0;
+  right: -3rem;
+  z-index: -1;
+  transition: all, 0.4s ease;
+}
+
+.button-group span i {
+  font-size: 2rem;
+  color: black;
+  border-radius: 50%;
+  justify-content: center;
+}
+
+.button-group span {
+  border: 1px black;
+  pad: 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all, 0.4s ease;
+}
+
+.button-group span:hover {
+  background-color: #65dc0a;
+}
+
+.button-group span i {
+  justify-self: start;
+  border: 2px solid #65dc0a;
+  padding: 1rem;
+  border-radius: 50%;
+  transition: all, 0.4s ease;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-group span:hover i {
+  color: black;
+}
+
+.card-product:hover .button-group {
+  z-index: 0;
+  right: -1rem;
+}
+
+.content-card-product {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(4, min-content);
+  row-gap: 1rem;
+}
+
+.stars {
+  grid-row: 1/2;
+  grid-column: 1/-1;
+}
+
+.content-card-product h3 {
+  grid-row: 2/3;
+  grid-column: 1/-1;
+  font-family: 'Montserrat';
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  font-weight: 400;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+.content-card-product h3:hover {
+  color: #65dc0a;
+}
+
+.add-cart {
+  justify-self: start;
+  padding: 1rem;
+  border-radius: 50%;
+  transition: all, 0.4s ease;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.add-cart:hover i {
+  color: #3c9441;
+}
+
+.price {
+  font-size: 1.7rem;
+  font-weight: 600;
+  justify-self: end;
+  align-self: center;
+}
+
+.price span {
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-decoration: line-through;
+  color: red;
+  margin-left: 0.5rem;
+}
+
+.gallery {
+  display: grid;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.gallery img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.gallery-img-3 {
+  grid-column: 2/4;
+  grid-row: 1/3;
+}
+
+h2{
+  font-family: 'Montserrat';
+  color: #57bb95;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+h3{
+  font-family: 'Montserrat';
+}
+/*MODAL*/
+.modal-content{
+  border-radius: 25px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.modal-header{
+  background: linear-gradient(135deg, #28a745, #1e7e34);
+  color: white;
+  border-radius: 15px 15px 0 0;
+  border-bottom: none;
+  
+}
+
+.modal-title{
+ font-size: 1.5 rem;
+ font-weight: 600;
+}
+
+.modal-body{
+  padding: 2rem;
+}
+
+p{
+ font-size: 1.1rem;
+ color: #51634b;
+}
+
+h4{
+  color: #57bb95;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.modal-body ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.modal-body ul li {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  padding-left: 0;
+}
+
+.modal-body ul li i.fas.fa-check {
+  margin-right: 10px;
+  color: #28a745;
+  position: static; /* Cambiado de absolute a static */
+}
+/*FOOTER*/
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+.footer{
+  background-color: #51634b;
+  padding: 80px 0;
+}
+
+.footer-row{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-links{
+  width: 25%;
+  padding: 0 15px;
+}
+
+.footer-links h4{
+  font-size: 20px;
+  color: #ffffff;
+  margin-bottom: 25px;
+  font-weight: 500;
+  border-bottom: 2px solid #57bb95;
+  padding-bottom: 10px;
+  display: inline-block;
+
+}
+
+.footer-links ul li a{
+  font-size: 18px;
+  text-decoration: none;
+  color: #BBBBBB;
+  display: block;
+  margin-bottom: 15px;
+  transition: all .3s ease;
+}
+
+.footer-links ul li a:hover{
+  color: #ffffff;
+  padding-left: 6px;
+}
+
+.social-link a{
+  display: inline-block; 
+  min-height: 40px;
+  width: 40px;
+  background-color: rgba(red, green, blue, alpha);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all .5s ease;
+}
+
+.social-link a:hover{
+  background-color: #57bb95;
+}
+@media (max-width: 768px){
+    header{
+        font-size: 1.2em;
+    }
+    /*CAROUSEL*/
+    .banner {
+      /* Eliminar propiedades duplicadas y ajustar */
+      width: 100vw;
+      margin: 0;
+      padding: 0;
+      position: relative;
+      background-position: center;
+      overflow: hidden;
+      height: 500px;
+    }
+    
+    .banner img {
+      width: 100%;
+      height: auto;
+      display: block;
+      object-fit: cover;
+      margin: 0;
+      padding: 0;
+    }
+    p{
+      font-size: 0.9rem;
+    }
+    .imagen-bebida{
+      display: none;
+    }
+    .wrapper{
+      display: none;
+    }
+    footer{
+        font-size: 0.9em;
+    }
+    .footer-row{
+      text-align: center;
+    }
+    .footer-links{
+      width: 100%;
+      margin-bottom: 30px;
+    }
+
+    .container-products{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0 auto;
+      max-width: 1200px;
+    }
+
+    .card-product{
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
+}
+
+

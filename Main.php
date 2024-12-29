@@ -39,6 +39,7 @@ $isLoggedIn = isset($_SESSION['usuario']);
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <div class="container">
                         <ul class="navbar-nav">
+                        <?php if (!$isLoggedIn): ?>
                             <li class="nav-item">
                                 <a class="nav-link" aria-current="page" href="#">INICIO</a>
                             </li>
@@ -48,22 +49,33 @@ $isLoggedIn = isset($_SESSION['usuario']);
                             <li class="nav-item">
                                 <a class="nav-link" href="#Productos">PRODUCTOS</a>
                             </li>
-
-                            <?php if (!$isLoggedIn): ?>
-                                <!-- Si no está logueado, muestra el texto "LOGIN" -->
+ 
                                 <li class="nav-item">
                                     <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#loginModal">LOGIN</a>
                                 </li>
+
                             <?php else: ?>
-                                <!-- Si está logueado, muestra "Bienvenido [nombre de usuario]" -->
+
                                 <li class="nav-item">
-                                <a class="nav-link">Bienvenido <?php echo $_SESSION['usuario']; ?></a>
-                                </li>
-                                <li class="nav-item">
-                                <a class="nav-link" href="pedidos.php">PEDIDOS</a>  <!-- Cambié la URL a 'pedidos.php' -->
+                                    <a class="nav-link">Bienvenido <?php echo $_SESSION['usuario']; ?></a>
                                 </li>
 
-                                <!-- Opción para cerrar sesión -->
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="#">INICIO</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#Nosotros">ACERCA DE</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#Productos">PRODUCTOS</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="pedidos.php">PEDIDOS</a>
+                                </li>
+
                                 <li class="nav-item">
                                     <a class="nav-link" href="logout.php">CERRAR SESIÓN</a>
                                 </li>

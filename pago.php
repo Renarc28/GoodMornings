@@ -41,13 +41,13 @@ if (!isset($_SESSION['usuario'])) {
         <input type="text" id="direccion" name="direccion" required><br><br>
 
         <label for="tarjeta">Número de Tarjeta:</label>
-        <input type="text" id="tarjeta" name="tarjeta" required><br><br>
+        <input type="number" id="tarjeta" name="tarjeta" required maxlength="16" oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"><br><br>
 
         <label for="fecha_expiracion">Fecha de Expiración:</label>
-        <input type="text" id="fecha_expiracion" name="fecha_expiracion" required><br><br>
+        <input type="date" id="fecha_expiracion" name="fecha_expiracion" required><br><br>
 
         <label for="cvv">CVV:</label><br>
-        <input type="text" id="cvv" name="cvv" required><br><br>
+        <input type="number" id="cvv" name="cvv" required maxlength="3" oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"><br><br>
 
         <p><strong>Total: S/. <span id="cart-total">0.00</span></strong></p>
 

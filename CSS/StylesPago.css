@@ -41,7 +41,7 @@ input{
    max-width: 480px;
    justify-content: center;
 }
-input[type="text"], input[type="submit"] {
+input[type="text"], input[type="submit"], input[type="number"], input[type="date"] {
     padding: 8px; 
     margin: 5px 0;
     width: 100%; 

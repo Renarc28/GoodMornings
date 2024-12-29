@@ -282,7 +282,7 @@ $isLoggedIn = isset($_SESSION['usuario']);
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                                    <button type="button" class="btn btn-success">Agregar al carrito</button>
+                                    <button type="button" class="btn btn-success" data-bs-dismiss="modal">Agregar al carrito</button>
                                 </div>
                             </div>
                         </div>
@@ -343,7 +343,7 @@ $isLoggedIn = isset($_SESSION['usuario']);
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                                <button type="button" class="btn btn-success">Agregar al carrito</button>
+                                <button type="button" class="btn btn-success" data-bs-dismiss="modal">Agregar al carrito</button>
                             </div>
                         </div>
                     </div>
@@ -404,7 +404,7 @@ $isLoggedIn = isset($_SESSION['usuario']);
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                                <button type="button" class="btn btn-success">Agregar al carrito</button>
+                                <button type="button" class="btn btn-success" data-bs-dismiss="modal">Agregar al carrito</button>
                             </div>
                         </div>
                     </div>
@@ -465,7 +465,7 @@ $isLoggedIn = isset($_SESSION['usuario']);
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                                <button type="button" class="btn btn-success">Agregar al carrito</button>
+                                <button type="button" class="btn btn-success" data-bs-dismiss="modal">Agregar al carrito</button>
                             </div>
                         </div>
                     </div>
@@ -526,7 +526,7 @@ $isLoggedIn = isset($_SESSION['usuario']);
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                                <button type="button" class="btn btn-success">Agregar al carrito</button>
+                                <button type="button" class="btn btn-success" data-bs-dismiss="modal">Agregar al carrito</button>
                             </div>
                         </div>
                     </div>
@@ -586,7 +586,7 @@ $isLoggedIn = isset($_SESSION['usuario']);
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                                <button type="button" class="btn btn-success">Agregar al carrito</button>
+                                <button type="button" class="btn btn-success" data-bs-dismiss="modal">Agregar al carrito</button>
                             </div>
                         </div>
                     </div>

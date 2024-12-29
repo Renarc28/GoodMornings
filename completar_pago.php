@@ -88,7 +88,7 @@ $conexion->close();
         <input type="text" id="direccion" name="direccion" required><br><br>
 
         <label for="tarjeta">Número de Tarjeta:</label>
-        <input type="text" id="tarjeta" name="tarjeta" required><br><br>
+        <input type="number" id="tarjeta" name="tarjeta" required><br><br>
 
         <label for="fecha_expiracion">Fecha de Expiración:</label>
         <input type="text" id="fecha_expiracion" name="fecha_expiracion" required><br><br>

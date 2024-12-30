@@ -2,9 +2,7 @@ document.addEventListener("scroll", highlightSection);
 document.querySelectorAll(".navbar-nav .nav-link").forEach(link => {
     link.addEventListener("click", function() {
         // Espera un momento para permitir que el desplazamiento se complete
-        setTimeout(() => {
-            highlightSection(); // Llama a la función de resaltado después del desplazamiento
-        }, 100);
+        setTimeout(highlightSection, 100);
     });
 });
 
@@ -17,7 +15,7 @@ function highlightSection() {
     sections.forEach((section) => {
         const sectionTop = section.offsetTop;
         const sectionHeight = section.offsetHeight;
-        const scrollPosition = window.scrollY + 60; // Ajuste para el margen
+        const scrollPosition = window.scrollY + 110; // Ajuste para el margen
 
         // Verifica si el scroll está dentro de la sección
         if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {

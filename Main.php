@@ -41,7 +41,7 @@ $isLoggedIn = isset($_SESSION['usuario']);
                         <ul class="navbar-nav">
                         <?php if (!$isLoggedIn): ?>
                             <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="#">INICIO</a>
+                                <a class="nav-link" aria-current="page" href="#Inicio">INICIO</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#Nosotros">ACERCA DE</a>
@@ -61,7 +61,7 @@ $isLoggedIn = isset($_SESSION['usuario']);
                                 </li>
 
                                 <li class="nav-item">
-                                    <a class="nav-link" aria-current="page" href="#">INICIO</a>
+                                    <a class="nav-link" aria-current="page" href="#Inicio">INICIO</a>
                                 </li>
 
                                 <li class="nav-item">
@@ -96,7 +96,7 @@ $isLoggedIn = isset($_SESSION['usuario']);
     </header>
 
     <main>
-        <section class="banner">
+        <section class="banner" id="Inicio">
             <div class="content-banner">
                 <img src="Images/Fondo.jpg" alt="Portada" class="Imagen-Fondo">
             </div>
@@ -234,10 +234,8 @@ $isLoggedIn = isset($_SESSION['usuario']);
             </div>    
            </section>
        
-        <h2 style="color: white;"><i id="Productos"></i>Productos</h2>
-        <br>
-
-        <section class="container top-products">
+        <section class="container top-products" id="Productos">
+        <h2 style="color: white;">Productos</h2>
             <div class="container-products">
                 <!-- Emoliente -->
                 <div class="card-product" data-bs-toggle="modal" data-bs-target="#productoEmoliente" style="cursor: pointer;">
@@ -843,6 +841,7 @@ $isLoggedIn = isset($_SESSION['usuario']);
     </div>
 
 
-    <script src="JS/carrito.js"></script>    
+    <script src="JS/carrito.js"></script>   
+    <script src="JS/DetectarSeccion.js"></script> 
 </body>
 </html>
